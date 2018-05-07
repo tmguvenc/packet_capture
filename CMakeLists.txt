@@ -38,15 +38,15 @@ set(ZEROMQ_LINK_RELEASE libzmq-v120-mt-4_0_4)
 
 set(SWIG "${SWIG_EXECUTABLE}")
 
-set(GTEST_DIR ${DEPENDENCY_DIR}/googletest-distribution)
-set(GTEST_INCLUDE_DIR ${GTEST_DIR}/include)
-set(GTEST_LIB_DIR ${GTEST_DIR}/lib)
-set(GTEST_LINK_DEBUG "gtest-d" )
-set(GTEST_LINK_RELEASE "gtest")
+# set(GTEST_DIR ${DEPENDENCY_DIR}/googletest-distribution)
+# set(GTEST_INCLUDE_DIR ${GTEST_DIR}/include)
+# set(GTEST_LIB_DIR ${GTEST_DIR}/lib)
+# set(GTEST_LINK_DEBUG "gtest-d" )
+# set(GTEST_LINK_RELEASE "gtest")
 
-enable_testing()
+# enable_testing()
 
 add_subdirectory(packet_capture)
-# add_subdirectory(test)
+add_subdirectory(test)
 
 set_property(GLOBAL PROPERTY USE_FOLDERS ON)

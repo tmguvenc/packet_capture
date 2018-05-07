@@ -8,7 +8,7 @@
 #include <atomic>
 
 struct Packet;
-class PacketCaptureBase;
+class IPacketCapture;
 class IPacketCaptureStrategy;
 
 class PACKET_CAPTURE_EXPORT PacketCapture {
@@ -24,7 +24,7 @@ private:
 	uint16_t mPort;
 	std::future<void> mFutureCapture;
 	std::future<void> mFutureSend;
-	PacketCaptureBase* mpPacketCapture;
+	IPacketCapture* mpPacketCapture;
 	IPacketCaptureStrategy* mpCaptureStrategy;
 	std::atomic<bool> mRun;
 };

@@ -9,7 +9,7 @@ struct PacketCaptureParams;
 class IPacketCaptureStrategy;
 struct pcap;
 
-class PACKET_CAPTURE_EXPORT OnlinePacketCapture : public PacketCaptureBase {
+class PACKET_CAPTURE_EXPORT OnlinePacketCapture : public IPacketCapture {
 public:
 
 	explicit OnlinePacketCapture(const PacketCaptureParams& arParametreler);
@@ -33,4 +33,4 @@ private:
 	int mPaketBoyutu;
 };
 
-#endif // !CEVRIMICI_UDP_PAKET_TOPLAYICI_H
+#endif // !ONLINE_PACKET_CAPTURE_H

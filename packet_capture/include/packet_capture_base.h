@@ -3,9 +3,9 @@
 
 class IPacketCaptureStrategy;
 
-class PacketCaptureBase {
+class IPacketCapture {
 public:
-	virtual ~PacketCaptureBase() { }
+	virtual ~IPacketCapture() { }
 	virtual bool capture(IPacketCaptureStrategy* apCallback, int aPacketCount) = 0;
 };
 

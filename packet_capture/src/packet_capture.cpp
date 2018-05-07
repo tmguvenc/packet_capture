@@ -53,7 +53,6 @@ void PacketCapture::start() {
 				zmq_send(senderSocket, &lpPacket->timestamp, sizeof(lpPacket->timestamp), ZMQ_SNDMORE);
 				zmq_send(senderSocket, &lpPacket->length, sizeof(lpPacket->length), ZMQ_SNDMORE);
 				zmq_send(senderSocket, lpPacket->data, sizeof(lpPacket->length), 0);
-
 				delete lpPacket;
 			}
 		}
