@@ -1,0 +1,18 @@
+#include "packet_captureVersion.h"
+
+char* packet_captureVersionString(){
+	return "@VERSION_MAJOR@.@VERSION_MINOR@.@VERSION_TYPE@.@VERSION_BUILD@";
+}
+
+int packet_captureVersionMajor(){
+	return @VERSION_MAJOR@;
+}
+int packet_captureVersionMinor(){
+	return @VERSION_MINOR@;
+}
+int packet_captureVersionType(){
+	return @VERSION_TYPE@;
+}
+int packet_captureVersionBuild(){
+	return @VERSION_BUILD@;
+}
